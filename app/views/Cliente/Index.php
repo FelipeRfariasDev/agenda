@@ -79,68 +79,60 @@ foreach($listarEncerradosGrafico as $v){
 
 ?>
 
-<!DOCTYPE HTML>
-<html>
-<head>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js">
-    </script>
-    <script>
-        window.onload = function () {
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js">
+</script>
+<script>
+    window.onload = function () {
 
-            var chart = new CanvasJS.Chart("chartContainer", {
-                animationEnabled: true,
-                title:{
-                    text: "Total encerrado"
-                },
-                axisY: {
-                    title: "Total",
-                    titleFontColor: "#4F81BC",
-                    lineColor: "#4F81BC",
-                    labelFontColor: "#4F81BC",
-                    tickColor: "#4F81BC"
-                },
-                axisY2: {
-                    title: "Sold",
-                    titleFontColor: "#C0504E",
-                    lineColor: "#C0504E",
-                    labelFontColor: "#C0504E",
-                    tickColor: "#C0504E"
-                },
-                toolTip: {
-                    shared: true
-                },
-                legend: {
-                    cursor:"pointer",
-                    itemclick: toggleDataSeries
-                },
-                data: [{
-                    type: "column",
-                    name: "Total",
-                    legendText: "Total",
-                    showInLegend: true,
-                    dataPoints:<?php echo json_encode($data,
-                        JSON_NUMERIC_CHECK); ?>
-                }]
-            });
-            chart.render();
+        var chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title:{
+                text: "Total encerrado"
+            },
+            axisY: {
+                title: "Total",
+                titleFontColor: "#4F81BC",
+                lineColor: "#4F81BC",
+                labelFontColor: "#4F81BC",
+                tickColor: "#4F81BC"
+            },
+            axisY2: {
+                title: "Sold",
+                titleFontColor: "#C0504E",
+                lineColor: "#C0504E",
+                labelFontColor: "#C0504E",
+                tickColor: "#C0504E"
+            },
+            toolTip: {
+                shared: true
+            },
+            legend: {
+                cursor:"pointer",
+                itemclick: toggleDataSeries
+            },
+            data: [{
+                type: "column",
+                name: "Total",
+                legendText: "Total",
+                showInLegend: true,
+                dataPoints:<?php echo json_encode($data,
+                    JSON_NUMERIC_CHECK); ?>
+            }]
+        });
+        chart.render();
 
-            function toggleDataSeries(e) {
-                if (typeof(e.dataSeries.visible) === "undefined"
-                    || e.dataSeries.visible) {
-                    e.dataSeries.visible = false;
-                }
-                else {
-                    e.dataSeries.visible = true;
-                }
-                chart.render();
+        function toggleDataSeries(e) {
+            if (typeof(e.dataSeries.visible) === "undefined"
+                || e.dataSeries.visible) {
+                e.dataSeries.visible = false;
             }
-
+            else {
+                e.dataSeries.visible = true;
+            }
+            chart.render();
         }
-    </script>
-</head>
 
-<body>
+    }
+</script>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-</body>
-</html>
 
