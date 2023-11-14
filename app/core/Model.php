@@ -60,6 +60,12 @@ abstract class Model{
             throw new \Exception($e->getMessage());
         }
     }
+
+    function listarEncerradosAll($conn, $tabela =null){
+        $sql = "SELECT Encerrado as label,count(Encerrado) as y FROM cliente group by Encerrado";
+        $stmt = $conn->query($sql);
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
+    }
     
     //Retorna uma consulta por um campo
     function find($conn, $campo, $valor, $tabela=null, $isLista=false ){
@@ -248,6 +254,20 @@ abstract class Model{
             throw new \Exception($e->getMessage());
         }
         
+    }
+
+    function listarEncerrados($conn){
+
+        try {
+            $sql = "SELECT Encerrado,count(Encerrado) as qtd FROM agenda.cliente group by Encerrado" ;
+            $stmt = $conn->prepare($sql);
+
+            $stmt->execute();
+            return $stmt->fetchAll(\PDO::FETCH_OBJ);
+
+        }catch (\PDOException $e){
+            throw new \Exception($e->getMessage());
+        }
     }
 }
 

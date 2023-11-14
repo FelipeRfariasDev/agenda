@@ -8,6 +8,10 @@ class Service{
         $dao = new Dao();
         return $dao->lista($tabela);
     }
+    public static function listarEncerrados($tabela){
+        $dao = new Dao();
+        return $dao->listarEncerrados($tabela);
+    }
     public static  function get($tabela, $campo, $valor,$eh_lista=false){
         $dao = new Dao();
         return  $dao->get($tabela, $campo, $valor,$eh_lista);

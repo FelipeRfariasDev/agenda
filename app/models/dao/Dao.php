@@ -7,6 +7,10 @@ class Dao extends Model{
         return  $this->all($this->db, $tabela);
     }
 
+    public function listarEncerrados($tabela){
+        return  $this->listarEncerradosAll($this->db, $tabela);
+    }
+
     public function get($tabela, $campo, $valor, $eh_lista){
         return  $this->find($this->db,$campo, $valor, $tabela, $eh_lista);
     }    

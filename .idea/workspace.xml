@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cc1dcb-6c77-429a-acc2-9e83135f2de8" name="Changes" comment="">
+    <list default="true" id="d7cc1dcb-6c77-429a-acc2-9e83135f2de8" name="Changes" comment="Total encerrado">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/ClienteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/ClienteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/core/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/core/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/dao/Dao.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/dao/Dao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/service/Service.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/service/Service.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/Cliente/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/Cliente/Index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +38,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -44,11 +50,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699978878506</updated>
-      <workItem from="1699978880205" duration="4562000" />
+      <workItem from="1699978880205" duration="7349000" />
     </task>
+    <task id="LOCAL-00001" summary="Total encerrado">
+      <created>1699985475833</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699985475833</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Total encerrado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Total encerrado" />
   </component>
 </project>

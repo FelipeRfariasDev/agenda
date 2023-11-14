@@ -27,6 +27,7 @@ class ClienteController extends Controller{
          
     public function index(){
        $dados["lista"] = Service::lista($this->tabela);
+       $dados["listarEncerradosGrafico"] = Service::listarEncerrados($this->tabela);;
        $dados["view"]  = "Cliente/Index";
        $this->load("template", $dados);
     }

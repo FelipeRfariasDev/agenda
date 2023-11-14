@@ -73,19 +73,13 @@
 					</div>
 				</section>
 <?php
+foreach($listarEncerradosGrafico as $v){
+    $dataPoints[] = ['label'=>$v->label,'y'=>$v->y];
+}
 
-
-// Data to draw graph for purchased products
-$dataPoints = array(
-    array("label"=> "Samuel", "y"=> 10),
-    array("label"=> "Felipe", "y"=> 15)
-);
-
-// Data to draw graph for sold products
-$dataPoints2 = array(
-    array("label"=> "Samuel"),
-    array("label"=> "Felipe"),
-);
+foreach($listarEncerradosGrafico as $v){
+    $dataPoints2[] = ['label'=>$v->label];
+}
 
 ?>
 
