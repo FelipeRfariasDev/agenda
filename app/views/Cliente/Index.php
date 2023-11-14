@@ -74,11 +74,7 @@
 				</section>
 <?php
 foreach($listarEncerradosGrafico as $v){
-    $dataPoints[] = ['label'=>$v->label,'y'=>$v->y];
-}
-
-foreach($listarEncerradosGrafico as $v){
-    $dataPoints2[] = ['label'=>$v->label];
+    $data[] = ['label'=>$v->label,'y'=>$v->y];
 }
 
 ?>
@@ -122,7 +118,7 @@ foreach($listarEncerradosGrafico as $v){
                     name: "Total",
                     legendText: "Total",
                     showInLegend: true,
-                    dataPoints:<?php echo json_encode($dataPoints,
+                    dataPoints:<?php echo json_encode($data,
                         JSON_NUMERIC_CHECK); ?>
                 }]
             });
