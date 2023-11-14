@@ -1,0 +1,138 @@
+*{
+	padding: 5px;
+	font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+
+.arrumar{
+
+	background: radial-gradient(1px at 50%, #d24407ed 0%, #d24407ed 700px);
+	width:100%;
+	display: inline-block;
+	margin-bottom:50px;
+	height:relative;
+}
+.topo{
+	width: absolute;
+	float:left;
+	
+	
+}
+
+
+.menu ul {
+	align-items: center;
+	
+	display: inline;
+	
+	list-style-type:none;}
+	
+.menu ul li{
+	
+		
+		display: inline;
+		font-size: 1.1em;
+		}
+			
+
+
+.menu ul li a{
+	width: absolute;
+	
+	padding: 20px;
+	float: right;
+	
+	letter-spacing:1px;
+	color: #FFF;
+	
+	margin-right:-20px;
+	text-decoration: none;
+	font-weight: bold;
+	
+	
+
+}
+
+
+.menu .ico{
+	float:left; 
+	height: auto;
+	align-content: center;
+}
+.menu .ico.home{
+	content:url(../img/ico-home-min.png);
+}
+.menu .ico.cad{
+	content:url(../img/ico-lista-min.png)
+}
+.menu .ico.sair{
+	content:url(../img/ico-sair-min.png)
+}
+
+
+.conteudo{
+	
+
+	
+	padding:30px;
+	background: radial-gradient(1px at 100%,#d24407ed 10%, #d24407ed 960px);
+	display: flex;
+	font-size: 22px;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	color:#fff;
+	/* text-transform:uppercase; */
+	/* border-bottom:solid 1px #d24407ed; */
+	width: -50%;
+	
+}
+
+.conteudo .ico.home{
+	
+	content:url(../img/ico-home-min.png);
+	
+}
+
+
+
+
+.cx-home .thead{
+	margin-top: 1px;
+	border-radius: 5px;
+	width:25%;
+	margin: 0 auto;
+	text-align:center;
+	text-transform:uppercase;
+	
+	
+	
+	}
+.thead img{
+	margin-left: -180px;
+	max-width: 600px;
+	background-image:rgba(222, 141, 54, 0.4);
+	background-color:rgba(222, 141, 54, 0.4);
+	opacity: 1.0;
+	border: none;
+
+}
+
+.thead button{
+	
+	
+	opacity: 0.4;
+	border: none;
+
+}
+
+
+
+
+.rodape{
+	width:100%;
+	
+	background:#483d7d42;
+
+	text-align:center;}

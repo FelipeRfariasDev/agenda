@@ -1,0 +1,262 @@
+*{
+	padding:-20px;
+	margin:0;
+	box-sizing:border-box;
+	
+	
+	
+}
+
+body{font-family:arial, 'sans-serif'; font-size:1em; background:#e2e2e2}
+	a{text-decoration:none;}
+	a:hover{text-decoration:underline;}
+
+body.base-login{
+	background:#e2e2e2
+}
+body.base-login .caixa{
+	min-height:auto;
+	margin-top:60px;
+	background: radial-gradient(1px at 50%, #816edb 0%, #4C3C94 700px);
+    background: -webkit-radial-gradient(1px at 50%, #816edb 0%, #4C3C94 700px);
+    background: -moz-radial-gradient(1px at 50%, #816edb 0%, #4C3C94 700px);
+}
+body.base-login .caixa h1,
+body.base-login .caixa label
+{
+	color:#fff
+}
+.mostraCampo.bg-login-1{
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	    background: #fff;
+		display:none
+}
+
+.topo{
+	width:100%;
+	padding:90px 0;
+	height:90px;
+	background: radial-gradient(1px at 50%, #2e10bf 0%, #2e10bf 700px);
+	background: -webkit-radial-gradient(1px at 50%, #2e10bf 0%, #2e10bf 700px);
+	background: -moz-radial-gradient(1px at 50%, #2e10bf 0%, #2e10bf 700px);
+	
+}
+
+
+.topo .menu{
+	float:right;
+	margin-left:80px;
+	padding:12px 0;
+}
+.topo .menu ul li{
+	display:inline-block;
+	margin:0 10px;
+}
+.topo .menu ul li a{
+	display:inline-block;
+	color:#fff;
+	font-size:1em;
+	letter-spacing:1px;
+}
+.topo .menu .ico{
+	float:left;
+	width:18px;
+	height:18px;
+	margin-right:8px
+}
+.topo .menu .ico.home{
+	content:url(../img/ico-home-min.png)
+}
+.topo .menu .ico.cad{
+	content:url(../img/ico-cad-min.png)
+}
+.topo .menu .ico.lista{
+	content:url(../img/ico-lista-min.png)
+}
+.topo .menu .ico.sair{
+	content:url(../img/ico-sair-min.png)
+}
+
+.topo .busca{
+	float:right;
+	margin-top:3px;
+	position:relative;
+}
+.topo .busca input{
+	width:240px;
+	background:#fff;
+	padding:10px;
+	border-radius:3px;
+	border:0;
+}
+.busca5{
+	width:auto;
+	position:absolute;
+	right:-1px;
+	top:0;
+	bottom:0;
+	background:#d25f00 url(../img/ico-lupa.png) center  no-repeat;
+	padding:10px 25px;
+	font-size:0;
+	border-radius:0 3px 3px 0;
+	cursor:pointer;
+}
+
+/*conteudo centraliza tudo*/
+.conteudo{
+	width:960px;
+	margin:0 auto;
+	color:#fff;
+	
+	overflow:hidden;
+	padding: 1rem;
+	
+	
+}
+
+
+	
+
+
+.menu{
+	
+	
+	width:auto;
+	position:absolute;
+	right:123px;
+	top: 15px
+}
+
+.caixa{
+	width:100%;
+	float:center;
+	background: #F9F9F9;
+    border: solid 1px #473c7b4f;
+    box-shadow: 0 0px 6px 0 #332a5e4d;
+	border-radius:5px;
+	overflow:hidden;
+	min-height:600px
+}
+/* 1 */
+.thead{
+	display:block;
+	padding:15px 20px;
+	background: radial-gradient(1px at 50%, #3e2101 0%, #3e2101 700px);
+	background: -webkit-radial-gradient(1px at 50%, #3e2101 0%, #3e2101 700px);
+	background: -moz-radial-gradient(1px at 50%, #3e2101 0%, #3e2101 700px);
+	color:#fff;
+	text-transform:uppercase;
+	border-bottom:solid 1px #5f3b08;
+}
+
+.thead .ico{
+	float:left;
+	width:16px;
+	height:16px;
+	margin-right:8px
+}
+.thead .ico.home{
+	content:url(../img/ico-home-min.png)
+}
+.thead .ico.lista{
+	content:url(../img/ico-lista-min.png)
+}
+.thead .ico.cad{
+	content:url(../img/ico-cad-min.png)
+}
+
+.base-home{
+	width:100%;
+	float:right;
+	padding:-40px ;
+	
+	color:#3e2101
+}
+
+.titulo{
+	display: block;
+    border-bottom: solid 1px #ddd;
+    color: #464446;
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+}
+
+
+.cx-home{
+	width:100%;
+	margin-left: -50px;
+	background: radial-gradient(1px at 50%, #c13e06 0%, #c13e06 700px);
+	background: -webkit-radial-gradient(1px at 50%, #c13e06 0%, #c13e06 700px);
+	background: -moz-radial-gradient(1px at 50%, #c13e06 0%, #c13e06 700px);
+	border-radius:15px;
+	overflow:hidden;
+	min-height:190px;
+}
+.cx-home .thead{
+	text-align:center;
+	text-transform:uppercase;
+	background:rgba(205, 86, 12, 0.4)!important;
+	border-bottom:solid 1px #d87f0b;
+}
+.cx-home .tfooter{
+	width:100%;
+	float:left;
+	text-align:center;
+	background:rgba(0,0,0,0.4);
+	padding:10px;
+	margin-top:20px;
+	border-top:solid 1px #9782f6;
+}
+.cx-home .tfooter .btn.novo{
+	background:#a4700e;
+}
+
+.cx-body{
+	padding:100px 400px;
+	background:#a4700e;
+	
+	text-align:center;
+}
+.cx-body img{
+	
+	background: #a4700e;
+    float: left;
+    margin-left: -50px;
+    /* opacity: 0.05;*/
+	
+	
+	
+}
+.cx-body botao{
+	
+   margin-right: -80px;
+    
+}
+
+
+.cx-body strong{
+	display: center;
+	color:#FFF;
+	font-size:3.5em;
+	text-align:center;
+}
+.cx-body span{
+	color:#FFF;
+	display: auto;
+	text-align:center;
+	
+}
+
+.rodape{
+	
+	color:#070707;
+	font-size:1.2em;
+	text-align:center;
+	padding:30px 125px;
+}
+
+
