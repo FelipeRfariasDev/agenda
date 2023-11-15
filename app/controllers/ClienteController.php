@@ -27,11 +27,15 @@ class ClienteController extends Controller{
          
     public function index(){
        $dados["lista"] = Service::lista($this->tabela);
-       $dados["listarEncerradosGrafico"] = Service::listarEncerrados($this->tabela);;
+       $dados["listarEncerradosGrafico"] = Service::listarEncerrados($this->tabela);
        $dados["view"]  = "Cliente/Index";
        $this->load("template", $dados);
     }
-    
+    public function update_encerrado($id){
+        $encerrado_por=$_POST['encerrado_por'];
+        Service::encerrar_cliente($this->tabela,$encerrado_por,$id);
+        $this->redirect(URL_BASE."Cliente/index");
+    }
     public function create(){
         $dados["cliente"] = Flash::getForm();
         $dados["view"] = "Cliente/Create";
@@ -70,10 +74,6 @@ class ClienteController extends Controller{
                 $this->redirect(URL_BASE."cliente/edit/".$cliente->id_cliente);
             }
         }
-    }
-    public function update_encerrado($id){
-        echo "atualizar encerrado na tabela".$id;
-        exit;
     }
     public function excluir($id){
         Service::excluir($this->tabela, $this->campo, $id);

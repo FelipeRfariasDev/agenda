@@ -61,8 +61,8 @@
 								<td align="center"><?php echo $cliente->Acao?></td>
                                  <td align="center">
                                      <form method="post" action="/agenda/Cliente/update_encerrado/<?php echo $cliente->id_cliente?>">
-                                         <input type="text" name="encerrado_por" placeholder="Digite o nome de quem ecerrou">
-                                         <input type="submit" value="Ir">
+                                         <input type="text" name="encerrado_por" placeholder="Digite o nome de quem ecerrou" value="<?php echo $cliente->Encerrado?>">
+                                         <input type="submit" value="Executar">
                                      </form>
                                  </td>
 								<!-- class="d-inline-block btn btn-outline-roxo btn-pequeno img-fluido">

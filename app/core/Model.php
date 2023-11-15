@@ -66,7 +66,12 @@ abstract class Model{
         $stmt = $conn->query($sql);
         return $stmt->fetchAll(\PDO::FETCH_OBJ);
     }
-    
+    function encerrar_clienteUpdate($conn, $tabela =null,$encerrado_por=null,$id=null){
+        $sql = "UPDATE cliente SET `Encerrado` = '$encerrado_por' WHERE (`id_cliente` = '$id');";
+        $stmt = $conn->query($sql);
+        return $stmt->execute();
+    }
+
     //Retorna uma consulta por um campo
     function find($conn, $campo, $valor, $tabela=null, $isLista=false ){
         $tabela = ($tabela) ? $tabela: $this->tabela;
@@ -255,7 +260,9 @@ abstract class Model{
         }
         
     }
+    function editar_encerrado_por_id($conn,$id){
 
+    }
     function listarEncerrados($conn){
 
         try {

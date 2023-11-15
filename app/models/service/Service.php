@@ -12,6 +12,12 @@ class Service{
         $dao = new Dao();
         return $dao->listarEncerrados($tabela);
     }
+
+    public static function encerrar_cliente($tabela,$encerrado_por,$id){
+        $dao = new Dao();
+        return $dao->encerrar_cliente($tabela,$encerrado_por,$id);
+    }
+
     public static  function get($tabela, $campo, $valor,$eh_lista=false){
         $dao = new Dao();
         return  $dao->get($tabela, $campo, $valor,$eh_lista);

@@ -11,6 +11,9 @@ class Dao extends Model{
         return  $this->listarEncerradosAll($this->db, $tabela);
     }
 
+    public function encerrar_cliente($tabela,$encerrado_por,$id){
+        return  $this->encerrar_clienteUpdate($this->db, $tabela,$encerrado_por,$id);
+    }
     public function get($tabela, $campo, $valor, $eh_lista){
         return  $this->find($this->db,$campo, $valor, $tabela, $eh_lista);
     }    
@@ -52,7 +55,9 @@ class Dao extends Model{
     public function editar( $valores, $campo, $tabela){
         return $this->edit($this->db,  $valores,  $campo, $tabela);
     }
-    
+    public function editar_encerrado_por(){
+        return $this->editar_encerrado_por_id($this->db);
+    }
     public function excluir($tabela, $campo, $valor){
         return $this->del($this->db, $campo ,$valor , $tabela);
     }
