@@ -71,7 +71,10 @@ class ClienteController extends Controller{
             }
         }
     }
-    
+    public function update_encerrado($id){
+        echo "atualizar encerrado na tabela".$id;
+        exit;
+    }
     public function excluir($id){
         Service::excluir($this->tabela, $this->campo, $id);
         $this->redirect(URL_BASE."cliente");

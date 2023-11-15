@@ -43,7 +43,7 @@
 								   <th align="center">Caminho</th>
 								   <th align="center">Acao</th>
                                  
-								   <th align="center">Cobrado por</th>
+
 								   <th align="center">Encerrado por</th>
                                   
                                   
@@ -59,7 +59,12 @@
 								<td align="center"><?php echo $cliente->Prazo?></td>
 								<td align="center"><?php echo $cliente->Caminho?></td>
 								<td align="center"><?php echo $cliente->Acao?></td>
-								
+                                 <td align="center">
+                                     <form method="post" action="/agenda/Cliente/update_encerrado/<?php echo $cliente->id_cliente?>">
+                                         <input type="text" name="encerrado_por" placeholder="Digite o nome de quem ecerrou">
+                                         <input type="submit" value="Ir">
+                                     </form>
+                                 </td>
 								<!-- class="d-inline-block btn btn-outline-roxo btn-pequeno img-fluido">
 								<i class="fas fa-edit"></i> -->
 							  
